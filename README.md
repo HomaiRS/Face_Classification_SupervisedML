@@ -8,6 +8,4 @@ options(knitr.table.format = "latex")
 ```{r include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-```{r an}
-n <- 3 + rnorm(1)
-```
+![KNN](https://user-images.githubusercontent.com/43753085/103961602-70e53080-511a-11eb-92bf-41d1dded0e36.png)

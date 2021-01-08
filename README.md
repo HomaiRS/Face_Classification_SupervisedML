@@ -25,9 +25,7 @@ There are some face images in the dataset, shown in figure 2, that not only do n
 *Images with lighting issue:* there are two sort of issues with images lighting that needs to be addressed. First, due to an extreme darkness in some cases, no face can be seen in the image. Second, some images labeled as "Race: white" have very dark images that may increase the classification error. Same issue with the images labeled as "Race: black" with very bright images.
 
 * Blank images:* there are more than fifteen blanck images needing to be removed from the datasets.
-
 * Two subjects:* some images contain more than two faces.
-
 * Missing descriptor:* some images do not have any label.
 
 ![Removedimgs](https://user-images.githubusercontent.com/43753085/103963959-f8816e00-511f-11eb-925d-72fff4967ef8.png)

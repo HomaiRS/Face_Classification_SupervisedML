@@ -50,13 +50,13 @@ The above figure shows the performance of all used classifiers for different num
 
 ![ConfusionMatrices](https://user-images.githubusercontent.com/43753085/103976621-d77b4600-513c-11eb-8391-9e34908091d1.png)
 
-Among these five classifiers three of them have parametres that can be obtained based on the cross validation.
+The parametres for LASSO, decision tree, and gradient boosting method are computed based on the cross validation. For example,
 
-* First, in the objective function of the LASSO regression $\lambda$ is obtained by cross validation.
+* The objective function of the LASSO regression $\lambda$ is obtained by cross validation.
 $$arg min ||y-X\beta||_{2}^2+ \lambda\sum_{i=1}^{p}|B_{i}|   :   \beta\in R^{p}$$
 $$ = arg min ||y-X\beta||_{2}^2+ \lambda|B|$$
-* Second: in the classification tree (decision tree), the size of tree is obtained by cross validation.
-* Finally: The number of trees which is an stopping criteria in the gradient boosting method (GBM) also is obtained by cross validation. The results of cross validation for finding the optimal parameters of LASSO, decision tree and GBM are given in figure 10.
+* SThe classification tree (decision tree), the size of tree is obtained by cross validation.
+* The number of trees which is an stopping criteria in the gradient boosting method (GBM) also is obtained by cross validation. The results of cross validation for finding the optimal parameters of LASSO, decision tree and GBM are given in figure 10.
 
 
 

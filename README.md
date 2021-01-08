@@ -1,4 +1,4 @@
-# Data
+# MIT face recognition project dataset
 The “MIT face recognition project” (http://courses.media.mit.edu/2004fall/mas622j/04.projects/faces/) dataset was used for classifying face images using different machine learning algorithms.
 
 # Data statistics
@@ -46,4 +46,5 @@ Five different classifiers are used for binary classification as follows:
 * Decision tree (classification tree): binary classification.
 * Gradient boosting method: powerful techniques for building predictive models.
 
+![missclassplotTable](https://user-images.githubusercontent.com/43753085/103964447-1ac7bb80-5121-11eb-9d99-a1d7e9fa8a0c.png)
 

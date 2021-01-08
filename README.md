@@ -1,6 +1,5 @@
 # Data
-I used the dataset from “MIT face recognition project” (http://courses.media.mit.edu/2004fall/mas622j/04.projects/faces/)
-
+The “MIT face recognition project” (http://courses.media.mit.edu/2004fall/mas622j/04.projects/faces/) dataset was used for classifying face images using different machine learning algorithms.
 
 # FaceClassification_ML
 
@@ -15,3 +14,5 @@ Five different classifiers are used for binary classification as follows:
 * LASSO: feature selection method.
 * Decision tree (classification tree): binary classification.
 * Gradient boosting method: powerful techniques for building predictive models.
+
+

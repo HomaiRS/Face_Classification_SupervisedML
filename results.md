@@ -30,7 +30,7 @@ There are some face images in the dataset, shown in figure 2, that not only do n
 
 ![Removedimgs](https://user-images.githubusercontent.com/43753085/103963959-f8816e00-511f-11eb-925d-72fff4967ef8.png)
 
-# FaceClassification_ML
+# Image classification
 
 Based on the data Stat, shown in figure 1, number of observations for some response variables (labels) are not enogh for classification task. For example, in the "Face" label, there are not enough number of funny faces, or in the "Race" label there are not enough number of Black, asian and hispanic face images. Besides, some labels have unbalanced number of observations. For instance, in "Sex" label number of senior females are twice as many as the number of males. Overall, the response variable (lable) is female/male among adults' face images. Train and test set contain 2214 and 954 number of images respectively.
 
@@ -45,4 +45,18 @@ Five different classifiers are used for binary classification as follows:
 * Gradient boosting method: powerful techniques for building predictive models.
 
 ![missclassplotTable](https://user-images.githubusercontent.com/43753085/103964447-1ac7bb80-5121-11eb-9d99-a1d7e9fa8a0c.png)
+
+The above figure shows the performance of all used classifiers for different number of feature. Base on this plot, Gradient boosting method has the least misclassification error while the classification tree has the largest error. The following figure shows the comparison of the confusion metrices for different classifyers using different number of features. The total number of misclassified elements are given as black boxes next to each confusion mtrix. As indicated, the lower the number of features, the lower the performance of classifiers. For instance, whe we only use ten features, the misclassification error is higher (off-diagonal elements of the confusion metrices are larger), and this error decreases when we use 700 features. 
+
+![ConfusionMatrices](https://user-images.githubusercontent.com/43753085/103976621-d77b4600-513c-11eb-8391-9e34908091d1.png)
+
+Among these five classifiers three of them have parametres that can be obtained based on the cross validation.
+
+* First, in the objective function of the LASSO regression $\lambda$ is obtained by cross validation.
+$$arg min ||y-X\beta||_{2}^2+ \lambda\sum_{i=1}^{p}|B_{i}|   :   \beta\in R^{p}$$
+$$ = arg min ||y-X\beta||_{2}^2+ \lambda|B|$$
+* Second: in the classification tree (decision tree), the size of tree is obtained by cross validation.
+* Finally: The number of trees which is an stopping criteria in the gradient boosting method (GBM) also is obtained by cross validation. The results of cross validation for finding the optimal parameters of LASSO, decision tree and GBM are given in figure 10.
+
+
 

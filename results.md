@@ -55,7 +55,8 @@ The parametres for LASSO, decision tree, and gradient boosting method are comput
 * The objective function of the LASSO regression $\lambda$ is obtained by cross validation.
 <img width="1319" alt="LASSO_lossFunction" src="https://user-images.githubusercontent.com/43753085/103977116-25dd1480-513e-11eb-9c7a-f8369d599474.png">
 * SThe classification tree (decision tree), the size of tree is obtained by cross validation.
-* The number of trees which is an stopping criteria in the gradient boosting method (GBM) also is obtained by cross validation. The results of cross validation for finding the optimal parameters of LASSO, decision tree and GBM are given in figure 10.
+* The number of trees which is an stopping criteria in the gradient boosting method (GBM) also is obtained by cross validation. The results of cross validation for finding the optimal parameters of LASSO, decision tree and GBM are given in the following figure.
 
+![CV](https://user-images.githubusercontent.com/43753085/103977188-4c9b4b00-513e-11eb-97df-290393fc86d7.png)
 
 

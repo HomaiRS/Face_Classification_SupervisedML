@@ -1,3 +1,6 @@
 # FaceClassification_ML
 
-## dfn
+```{r,include=FALSE}
+library(kableExtra)
+options(knitr.table.format = "latex")
+```

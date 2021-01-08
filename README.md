@@ -15,4 +15,4 @@ The goal of this repository is to provide a benchmarking pipeline for a binary c
 |Logistic regression | [Face recognition based on PCA and logistic regression analysis](https://www.sciencedirect.com/science/article/pii/S0030402614008511?casa_token=UrmuyUqEutcAAAAA:NWhr2ZjNThxpvfBTC_pJ2W7dvDyim75WPVguRb7Rid9DGLUgRGIspxTAlxe3kD-PvcsbRm73OHk), Optik 2014 |
 | Linear regression | [Linear regression for face recognition.](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=5506092&casa_token=i_KLyjrTRAwAAAAA:0bTJTjbmtcxwr10SuKtvHChK_i896txaak1ON0HMIwlDmnqtRPWPdRNhpbvFBBP1K44pv8icfMo&tag=1), IEEE transactions on pattern analysis and machine intelligence 2010 |
 
-The classification results can be seen in the "results.md" file.
+The details on the classification results can be seen in the "results.md" file in this repo.

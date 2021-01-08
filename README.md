@@ -15,6 +15,23 @@ However, after careful scrutiny on "faceDR", "faceDS", the files looked to conta
 
 ![DataTable](https://user-images.githubusercontent.com/43753085/103963531-27e3ab00-511f-11eb-980b-6ada71e482fe.png)
 
+## Preprocessing dataset
+There are some face images in the dataset, shown in figure 2, that not only do not improve the classification performance but also they profoundly reduce model's accuracy. About 400 of face images are removed from the generic dataset due to at least one of the following reasons:
+
+*Face aside images:* face images that are not looking toward the camera. Since in some cases half of the face is turned, capturing the facial features via any of machine learning techniques is not straitforward (possible).
+
+*Infant/baby images:* there are about three to five infant images in the data set. They are not abundant to be considered as a label for classification; thus, these kind of images are removed.
+
+*Images with lighting issue:* there are two sort of issues with images lighting that needs to be addressed. First, due to an extreme darkness in some cases, no face can be seen in the image. Second, some images labeled as "Race: white" have very dark images that may increase the classification error. Same issue with the images labeled as "Race: black" with very bright images.
+
+*Blank images:* there are more than fifteen blanck images needing to be removed from the datasets.
+
+*Two subjects:* some images contain more than two faces.
+
+*Missing descriptor:* some images do not have any label.
+
+![Removedimgs](https://user-images.githubusercontent.com/43753085/103963959-f8816e00-511f-11eb-925d-72fff4967ef8.png)
+
 # FaceClassification_ML
 
 Based on the data Stat, shown in figure 1, number of observations for some response variables (labels) are not enogh for classification task. For example, in the "Face" label, there are not enough number of funny faces, or in the "Race" label there are not enough number of Black, asian and hispanic face images. Besides, some labels have unbalanced number of observations. For instance, in "Sex" label number of senior females are twice as many as the number of males. Overall, the response variable (lable) is female/male among adults' face images. Train and test set contain 2214 and 954 number of images respectively.

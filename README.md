@@ -1,6 +1,20 @@
 # Data
 The “MIT face recognition project” (http://courses.media.mit.edu/2004fall/mas622j/04.projects/faces/) dataset was used for classifying face images using different machine learning algorithms.
 
+# Data statistics
+On the MIT class web page addition to the 3584 face images, there are also two two ascii data files ("faceDR", "faceDS") extracted from the Eigenface database. These files contain face images' labels including *"photoID","Sex","Age","Race","Face","Properties"*. All these lables are categorical variables and each one of them can be evaluated as follows:
+
+* Photo ID: Face image number.
+* Sex: Female/ Male.
+* Age: Child/ Teen/ Adult/ Seniour.
+* Race: White/ Black/ Asian/ Hispanic/ Other.
+* Face: Smiling/ Serious/ Funny.
+* properties: Glasses/ Hat bandana/ Hat/ Mustache/ Mustache beard, etc.
+
+However, after careful scrutiny on "faceDR", "faceDS", the files looked to contain bias information. shown in the following figures, faceDR contains image 1 to 3222, and faceDS contains 3223 to 3995. Therefore, faceDR has all face images labeled by "child", and most of while there is no "child" in the faceDS which is supposed to be the test set. Thus, relying on the existent train and test set on the MIT web page might not lead to accurate face recognition results. The train and the test sets are sampled randomly.
+
+![DataTable](https://user-images.githubusercontent.com/43753085/103963531-27e3ab00-511f-11eb-980b-6ada71e482fe.png)
+
 # FaceClassification_ML
 
 Based on the data Stat, shown in figure 1, number of observations for some response variables (labels) are not enogh for classification task. For example, in the "Face" label, there are not enough number of funny faces, or in the "Race" label there are not enough number of Black, asian and hispanic face images. Besides, some labels have unbalanced number of observations. For instance, in "Sex" label number of senior females are twice as many as the number of males. Overall, the response variable (lable) is female/male among adults' face images. Train and test set contain 2214 and 954 number of images respectively.

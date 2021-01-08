@@ -9,8 +9,10 @@ The goal of this repository is to provide a benchmarking pipeline for classifica
 
 | Name               | Paper               | 
 |--------------------|---------------------|
+|LASSO | [Support Vector Feature Extraction Based Lasso For Gender Recognition From Object Classification](https://www.researchgate.net/deref/http%3A%2F%2Fdx.doi.org%2F10.21203%2Frs.3.rs-17037%2Fv1?_sg%5B0%5D=P7Gg9IQ_lj09Y7p9-OLEkzmSlhB3QQVXXF8_YtruKj4V9vaDYApHcNf7Upk_unkjxIfWhzEm0cx0Hkx8KSpg61iNoQ.9am_7aUYSiKjB1N0YHWaNlfEm3B0moRfOAb3gCPb6CRQ2xiLsWSW1K9fLOH98krILfG6vNIy-7V8lGBeiRcDAw) |
 |Logistic regression | [Face recognition based on PCA and logistic regression analysis](https://www.sciencedirect.com/science/article/pii/S0030402614008511?casa_token=UrmuyUqEutcAAAAA:NWhr2ZjNThxpvfBTC_pJ2W7dvDyim75WPVguRb7Rid9DGLUgRGIspxTAlxe3kD-PvcsbRm73OHk), Optik. 2014 |
-| Linear regression for image classification | [Linear regression for face recognition.](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=5506092&casa_token=i_KLyjrTRAwAAAAA:0bTJTjbmtcxwr10SuKtvHChK_i896txaak1ON0HMIwlDmnqtRPWPdRNhpbvFBBP1K44pv8icfMo&tag=1), IEEE transactions on pattern analysis and machine intelligence 2010   |
+| Linear regression for image classification | [Linear regression for face recognition.](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=5506092&casa_token=i_KLyjrTRAwAAAAA:0bTJTjbmtcxwr10SuKtvHChK_i896txaak1ON0HMIwlDmnqtRPWPdRNhpbvFBBP1K44pv8icfMo&tag=1), IEEE transactions on pattern analysis and machine intelligence 2010 |
+
 
 
 Based on the data Stat, shown in figure 1, number of observations for some response variables (labels) are not enogh for classification task. For example, in the "Face" label, there are not enough number of funny faces, or in the "Race" label there are not enough number of Black, asian and hispanic face images. Besides, some labels have unbalanced number of observations. For instance, in "Sex" label number of senior females are twice as many as the number of males. Overall, the response variable (lable) is female/male among adults' face images. Train and test set contain 2214 and 954 number of images respectively.

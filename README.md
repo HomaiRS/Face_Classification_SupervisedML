@@ -16,3 +16,7 @@ The goal of this repository is to provide a benchmarking pipeline for a binary c
 | Linear regression | [Linear regression for face recognition.](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=5506092&casa_token=i_KLyjrTRAwAAAAA:0bTJTjbmtcxwr10SuKtvHChK_i896txaak1ON0HMIwlDmnqtRPWPdRNhpbvFBBP1K44pv8icfMo&tag=1), IEEE transactions on pattern analysis and machine intelligence 2010 |
 
 The details on the classification results can be seen in the "results.md" file in this repo.
+
+```diff
+- See the results in "RESULT.md" file.
+```
